@@ -35,8 +35,8 @@ def load_data(data_folder):
         gdown.download(
             "https://drive.google.com/uc?id=1Yi5Wi4YWXIqmZvz7SGdlmnCxZoBddW0l&confirm=t",
             file_path,
-            quiet=False,
-            fuzzy=True
+            quiet=False
+        
         )
 
     df = pd.read_parquet(file_path)
