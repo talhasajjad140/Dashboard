@@ -37,7 +37,7 @@ def load_data(data_folder):
             quiet=False
         )
 
-    df = pd.read_csv(file_path, low_memory=False)
+   df = pd.read_csv(file_path, low_memory=False, encoding='latin-1')
     return _clean_data(df)
 
 
