@@ -33,7 +33,7 @@ def load_data(data_folder):
     if not os.path.exists(file_path):
         os.makedirs(data_folder, exist_ok=True)
         gdown.download(
-            "https://drive.google.com/uc?id=1Yi5Wi4YWXIqmZvz7SGdlmnCxZoBddW0l&confirm=t",
+         "https://drive.google.com/uc?id=1Can-Pjyr8cG6V5D-x0uA_BYQuGUwsrrs&confirm=t",
             file_path,
             quiet=False
         
