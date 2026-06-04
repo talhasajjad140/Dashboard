@@ -28,7 +28,7 @@ def convert_damage(value):
 @st.cache_resource
 def load_data(data_folder):
     """Download compiled CSV from Google Drive if not present, then load it."""
-    file_path = os.path.join(data_folder, "compiled.csv")
+   file_path = os.path.join(data_folder, "compiled.parquet")
 
     if not os.path.exists(file_path):
         os.makedirs(data_folder, exist_ok=True)
@@ -37,8 +37,7 @@ def load_data(data_folder):
             file_path,
             quiet=False
         )
-
-    df = pd.read_csv(file_path, low_memory=False, encoding="latin-1")
+df = pd.read_parquet(file_path)
     return _clean_data(df)
 
 
