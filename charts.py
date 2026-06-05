@@ -3,6 +3,8 @@ import seaborn as sns
 import pandas as pd
 import numpy as np
 
+plt.rcParams['text.usetex'] = False
+plt.rcParams['mathtext.default'] = 'regular'
 sns.set_theme(style="white")
 sns.set_style("ticks")
 PALETTE = ["#1B2A4A", "#2E86AB", "#C0392B", "#E67E22", "#27AE60", "#8E44AD"]
