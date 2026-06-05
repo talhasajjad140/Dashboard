@@ -329,7 +329,7 @@ df = pd.DataFrame()
 with st.spinner("Loading NOAA storm data..."):
     try:
         df = init_data()
-      st.write(df.columns.tolist())
+      
     except FileNotFoundError:
         st.error("Dataset not found. Add .csv or .csv.gz files inside the data/ folder.")
         st.stop()
